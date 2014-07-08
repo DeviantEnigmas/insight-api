@@ -54,9 +54,9 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\Bitcoin\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Bitcoin/';
-  if (isLinux) dataDir = process.env.HOME + '/.bitcoin/';
+  if (isWin) dataDir = '%APPDATA%\\Yescoin\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Yescoin/';
+  if (isLinux) dataDir = process.env.HOME + '/.Yescoin/';
 }
 dataDir += network === 'testnet' ? 'testnet3' : '';
 
@@ -129,7 +129,7 @@ module.exports = {
   apiPrefix: '/api',
   port: port,
   leveldb: db,
-  bitcoind: bitcoindConf, 
+  bitcoind: yescoindConf, 
   network: network,
   disableP2pSync: false,
   disableHistoricSync: false,
