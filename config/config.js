@@ -129,7 +129,7 @@ module.exports = {
   apiPrefix: '/api',
   port: port,
   leveldb: db,
-  bitcoind: yescoindConf, 
+  bitcoind: bitcoindConf, 
   network: network,
   disableP2pSync: false,
   disableHistoricSync: false,
