@@ -56,7 +56,7 @@ var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
   if (isWin) dataDir = '%APPDATA%\\Yescoin\\';
   if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Yescoin/';
-  if (isLinux) dataDir = process.env.HOME + '/.Yescoin/';
+  if (isLinux) dataDir = process.env.HOME + '/.yescoin/';
 }
 dataDir += network === 'testnet' ? 'testnet3' : '';
 
